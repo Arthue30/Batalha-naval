@@ -41,5 +41,17 @@ public class Objetos {
             System.out.println("@");
         }
     }
-    //public void portaAvioes(){}
+    public void portaAvioes(){
+        int i,j;
+        for (i=0;i<=2;i++){
+            for(j=0;j<=2;j++){
+                if(i==0 || i>=1 && i<=2 && j==1){
+                    System.out.print("@");
+                } else{
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
 }
