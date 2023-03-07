@@ -1,24 +1,27 @@
-public class Tabuleiro {
-    private int [][] dimensoes = new int [10][10];
-    private int [][] posicaoDefesa;
-    private int [][] posicaoAtaque;
-    private boolean acertar;
-    private String erro;
-    private String acerto;
+public class Tabuleiro extends Objetos{
+    private char [][] posicaoNavios;
+    private int [][] ataque;
+    //private boolean acertar;
 
-    public int[][] getPosicaoDefesa(){
-        return posicaoDefesa;
+    public int[][] getPosicaoNavios(){
+        return posicaoNavios;
     }
-    public int[][] getPosicaoAtaque(){
-        return posicaoAtaque;
+    public int[][] getAtaque(){
+        return ataque;
     }
-    public void SetPosicaoDefesa(int [][] posicaoDefesa){
-        this.posicaoDefesa = posicaoDefesa;
+    public void SetPosicaoNavios(int [][] posicaoNavios){
+        this.posicaoNavios = posicaoNavios;
 
     }
-    public void SetPosicaoAtaque(int [][] posicaoAtaque){
-        this.posicaoAtaque = posicaoAtaque;
+    public void SetAtaque(int [][] ataque){
+        this.ataque = ataque;
     }
 
+    public void criaTabuleiros(){
+        int[][] tabuleiro1 = new int [10][10];
+        int[][] tabuleiro2 = new int [10][10];
+    }
 
+    public Tabuleiro(){
+    }
 }
